@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+  <header>
+    <div class="donate-button-header">Donate</div>
+    <div class="container">
+    <a href="index.html">
+      <img src="KGB logo.png" alt="Logo" width="150" height="150">
+    </a>
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="demo.html" >Our Purpose</a>
+      <a href="Story.html" >Our Story</a>
+      <a href="News.html">News</a>
+      <a href="Programs.html">Programs</a>
+      <a href="about">Schools</a>
+      <a href="contact">Corporates</a>
+      <a href="Charities.html">Charities</a>
+      <a href="Contact.html">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction1()">&#9776;</a>
+    </div>
+  </header>
+
+  <div class="lightblue_box">
+  <div class ="top-message">
+  <p3>Is your charity looking for young volunteers?</p3>
+  </div>
+  <div class="body-message">
+  <p>Please complete this page with your request for young people to volunteer with you.
+
+  <br>
+  <br>
+
+  Please send us your Certificate of Currency and a JPEG to info@kidsgivingback.org
+
+  <br>
+  <br>
+
+  Any questions please drop us a line. 
+
+  <br>
+  <br>
+
+  Thank you.</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <p class="title-left">Request for Volunteers</p>
+
+  <div class="form-center">
+  <body id="canvas-container">
+  <form id="payment">
+          <div class="flex">
+            <!-- This element needs to have display flex -->
+            <div id='your-info'>
+              <h3>Your info</h3>
+              <div class="inline">
+                <label for="first">First name</label>
+                <input id="first_name" name="first_name" type="text" required>
+              </div>
+              <div class="inline">
+                <label for="last">Last name</label>
+                <input id="first_name" name="first_name" type="text" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" required>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="number" required>
+              </div>
+            </div>
+            
+            <div class="flex">
+            <div id='org-info'>
+            <h3>Organisation info</h3>
+              <div>
+                <label for="first">Name</label>
+                <input id="first_name" name="first_name" type="text" required>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" required>
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="number" required>
+              </div>
+            </div>
+          </div>
+          </div>
+
+      		<h3>Event Info</h3>
+          <div class="flex">
+          <div id='event-info'>
+            <div>
+                <label for="event">Event/Program name</label>
+  							<input id="event" name="event" type="text">
+            </div>
+            <div class="inline">
+      				<label for="date">Event Date</label>
+      				<input id="date" name="date" type="text" required>
+            </div>
+      			<div>
+      				<label for="description">One Line Description</label>
+      				<input id="description" name="description" type="text" maxlength="100" size="100" required> 
+      			</div>
+          </div>
+          </div>
+
+          <h3>Location</h3>
+          <div class="flex">
+          <div id='location'>
+      			<div>
+      				<label for="address">Address</label>
+      				<input id="address" name="address" type="text" maxlength="100" size="100" required></input>
+      			</div>
+            <div>
+      				<label for="apartment">Apartment, suite, etc. (optional)</label>
+      				<input id="apartment" name="apartment" type="text" maxlength="100" size="100" required>
+      			</div>
+            <div class="inline">
+      				<label for="city">City</label>
+      				<input id="city" name="city" type="text" required>
+      			</div>
+            <div class="inline">
+      				<label for="state">State</label>
+      				<input id="state" name="state" type="text" placeholder="NSW" required>
+      			</div>
+            <div class="inline">
+      				<label for="country">Country</label>
+      				<input id="country" name="country" type="text" placeholder="Australia" required>
+      			</div>
+            <div class="inline">
+      				<label for="postcode">Post code</label>
+      				<input id="postcode" name="postcode" type="text" placeholder="123" maxlength="4" size="4" required>
+            </div>
+          </div>
+          </div>
+
+          <h3>Volunteer Info</h3>
+          <div class="flex">
+          <div id='volunteer'>
+      			<div>
+      				<input id="address" name="address" type="text" placeholder="Please specify how many volunteers you will need. If you have several shifts for one event please note how many volunteers per shift." maxlength="100" size="100" required></input>
+      			</div>
+            <div>
+      				<label for="age">Minimum Age</label>
+      				<select id="age" name="age" type="text" required>
+                <option value="N/A">N/A</option>
+                <option value="16">16</option>
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+              </select>
+      			</div>
+            <div class="inline">
+      				<label for="start">Start time</label>
+      				<input id="start" name="start" type="text" required>
+      			</div>
+            <div class="inline">
+      				<label for="end">End time</label>
+      				<input id="end" name="end" type="text" required>
+      			</div>
+      			<div>
+      				<label for="oneline">One line description of volunteer task/s</label>
+      				<input id="oneline" name="oneline" type="text" required>
+      			</div>
+            <div>
+      				<label for="children">Working with children check</label>
+      				<input id="children" name="children" type="text" placeholder="Please name the person in attendance at the program with a current Working with Children Check" maxlength="100" size="100" required>
+      			</div>
+          </div>
+          </div>
+      		<button type="submit">Submit</button>
+  </form>
+  </div>
+  </div>
+
+  <div class = "footer-container">
+    <div class="footer">
+      <div class="footer-heading footer-1">
+          <h2>about</h2>
+            <a href="Purpose.html">our purpose</a>
+            <a href="Story.html">our story</a>
+            <a href="#">meet the team</a>
+            <a href="#">our board</a>
+            <a href="#">governance</a>
+            <a href="#">our supporters</a>
+            <a href="#">testimonials</a>   
+      </div>
+      <div class="footer-heading footer-2">
+          <h2>discover</h2>
+            <a href="News.html">news</a>
+            <a href="#">social</a>
+            <a href="#">save the date</a>
+            <a href="#">opinion</a>
+            <a href="#">work with us</a>
+      </div>
+      <div class="footer-heading footer-3">
+          <h2>programs</h2>
+            <a href="Programs.html">all programs</a>
+            <a href="#">school holiday programs</a>
+            <a href="#">family programs</a>
+            <a href="#">duke of edinburgh</a>
+      </div>
+      <div class="footer-heading footer-4">
+          <h2>schools</h2>
+            <a href="Schools.html">for schools</a>
+            <a href="#">service learning</a>
+            <a href="#">our programs</a>
+      </div>
+      <div class="footer-heading footer-5">
+          <h2>corporates</h2>
+            <a href="#">social responsibility</a>
+            <a href="#">team programs</a>
+            <a href="#">corporate giving</a>
+      </div>
+      <div class="footer-heading footer-5">
+          <h2>charities</h2>
+            <a href="Charities.html">get in touch</a>
+      </div>          
+      <div class="footer-email-form">
+        <div id="myDIV"><h2>join our newsletter</h2></div>
+        <input type="email" placeholder="Enter your email address" id="footer-email">
+        <button onclick="myFunction()">Submit</button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  </html>
+
+  
+
